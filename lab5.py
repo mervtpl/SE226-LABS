@@ -3,17 +3,17 @@ import string
 dict={}
 dictKey=set()
 dictValue=set()
-print("Choose 10 characters (lowercase only) and assign 5 replacement options each:")
-for _ in range(2):
+print("Choose 5 characters (lowercase only) and assign 5 replacement options each:")
+for _ in range(5):
     print("enter a lowercase character:")
     key=input()
     dict[key]=set()
-    for _ in range(1):
+    for _ in range(3):
         print("enter a replacement for  " + key)
         value=input()
         dict[key].add(value)
 
-    
+
 
 
 print(dict)
@@ -37,8 +37,9 @@ for password in passwords:
             else:
                 strongPasswords.append(password)
 
-
+print("weak passwords:")
 print(weakPasswords)
+print("strong passwords:")
 print(strongPasswords)
 
 
